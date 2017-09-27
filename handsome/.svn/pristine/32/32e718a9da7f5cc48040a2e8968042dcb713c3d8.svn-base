@@ -1,0 +1,15 @@
+package org.handsome.biz.manager.user.impl;
+
+import org.handsome.biz.dao.user.UserDAO;
+import org.handsome.biz.dao.user.data.UserDO;
+import org.handsome.biz.manager.user.UserManager;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class UserManagerImpl implements UserManager{
+	@Autowired
+	private UserDAO userDAO;
+	public UserDO get(Integer userID) {
+		return userDAO.get(userID);
+	}
+
+}

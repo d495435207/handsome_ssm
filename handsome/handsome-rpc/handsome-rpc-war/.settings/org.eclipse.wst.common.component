@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="handsome-rpc-war">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <dependent-module archiveName="handsome-rpc-impl.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/handsome-rpc-impl/handsome-rpc-impl">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="handsome-rpc-share.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/handsome-rpc-share/handsome-rpc-share">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="handsome-biz-manager.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/handsome-biz-manager/handsome-biz-manager">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="handsome-biz-dao.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/handsome-biz-dao/handsome-biz-dao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="handsome-rpc-war"/>
+        <property name="java-output-path" value="/handsome-rpc-war/target/classes"/>
+    </wb-module>
+</project-modules>

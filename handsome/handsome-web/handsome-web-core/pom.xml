@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.handsome</groupId>
+    <artifactId>handsome-web</artifactId>
+    <version>0.1</version>
+  </parent>
+  <artifactId>handsome-web-core</artifactId>
+  <name>handsome-web-core</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.handsome</groupId>
+      <artifactId>handsome-biz-manager</artifactId>
+  	  <version>${project.version}</version>
+    </dependency>
+      <!-- freemarker依赖 -->
+    <dependency>
+       <groupId>org.freemarker</groupId>
+       <artifactId>freemarker</artifactId>
+       <version>${freemarker.version}</version>
+    </dependency>
+  </dependencies>
+</project>

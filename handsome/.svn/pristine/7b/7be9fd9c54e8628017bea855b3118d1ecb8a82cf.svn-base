@@ -1,0 +1,20 @@
+package org.handsome.web.controller.module.user;
+
+import org.handsome.biz.dao.user.data.UserDO;
+import org.handsome.biz.manager.user.UserManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
+public class UserController {
+	@Autowired
+	private UserManager userManager;
+	
+	@RequestMapping(value="/user.html")
+	public String user(Model model,Integer userId){
+		UserDO userDO = userManager.get(userId);
+		model.addAttribute("user", userDO);
+		return "user/user";
+	}
+}
